@@ -37,9 +37,9 @@ except ImportError:
 #  CONFIG — Apni API keys yahan daalo
 # ══════════════════════════════════════════════
 class Config:
-    BOT_TOKEN       = os.getenv("BOT_TOKEN",        "YOUR_BOT_TOKEN_HERE")
+    BOT_TOKEN       = os.getenv("BOT_TOKEN",        "8337915378:AAHBrRVIW5VjGZPPw_B8wHdfTKo1V2RpO-w")
     AI_PROVIDER     = os.getenv("AI_PROVIDER",      "gemini")  # gemini | openai | anthropic | none
-    GEMINI_API_KEY  = os.getenv("GEMINI_API_KEY",   "")
+    GEMINI_API_KEY  = os.getenv("GEMINI_API_KEY",   "AIzaSyBkZXb7OUNtLmeRLFKiBAtKCqf1_h3ajXw")
     GEMINI_MODEL    = "gemini-2.0-flash"
     OPENAI_API_KEY  = os.getenv("OPENAI_API_KEY",   "")
     OPENAI_MODEL    = "gpt-3.5-turbo"
