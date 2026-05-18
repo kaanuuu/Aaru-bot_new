@@ -1,0 +1,16 @@
+# ══════════════════════════════════════
+#  AARU BOT - Requirements
+#  pip install -r requirements.txt
+# ══════════════════════════════════════
+
+# Core - Telegram Bot (REQUIRED)
+python-telegram-bot==21.6
+
+# AI Providers - Install whichever you use
+google-generativeai==0.7.2      # Gemini (FREE tier available!)
+openai==1.40.0                  # OpenAI GPT
+anthropic==0.34.0               # Claude
+
+# Utilities
+python-dotenv==1.0.1            # .env file support
+aiohttp==3.10.5                 # Async HTTP
