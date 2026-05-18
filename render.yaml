@@ -1,0 +1,20 @@
+services:
+  - type: worker          # ✅ worker use karo, web nahi (web sleep ho jata hai!)
+    name: aaru-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python aaru_bot.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      # ⬇️ Ye sab Render Dashboard > Environment mein set karo
+      - key: BOT_TOKEN
+        sync: false       # secret — dashboard se dena
+      - key: OWNER_ID
+        sync: false
+      - key: ADMIN_IDS
+        sync: false
+      - key: AI_PROVIDER
+        value: gemini
+      - key: GEMINI_API_KEY
+        sync: false
